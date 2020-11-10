@@ -1,5 +1,12 @@
 .navibar {
-	width:100%;
-	background-color:purple;
-	
+	width:auto;
+	height:2.4em;
+	background-color:#785A83;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+}
+
+.navibutton{
+	display:inline-block;
 }
