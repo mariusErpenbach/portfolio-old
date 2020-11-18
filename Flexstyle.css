@@ -1,0 +1,134 @@
+body {
+  background-color: #496A81;
+}
+/* welcome page */
+#TopContainer {
+  display: flex;
+  height:100%;
+
+  background-color: #2B3A67;
+
+}
+#TopPic {
+  z-index: +2;
+  top: 6%;
+  margin-left:35%;
+}
+
+#TopPic>img {
+  display:flex;
+  width: 60%;
+  height: auto;
+  margin-top: 2em;
+  margin-left:1em;
+}
+
+#TopPicText {
+  margin-top: 3em;
+  max-width: 20%;
+  top: 1%;
+  color: white;
+  margin-left: -16px;
+  padding-left: 16px;
+}
+li:not(:last-child) {
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+
+.NaviLink:hover{
+  padding:0.4em;
+  animation-name: Navihover;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+@keyframes Navihover {
+  0% {
+    padding:inherit;
+  }
+
+
+  100%{
+    padding:0.4em;
+  }
+}
+
+/* page main container */
+.flex-container {
+  display: flex;
+  height: 3em;
+  width: 100%;
+  background-color: #66999B;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  position: sticky;
+  top: 0;
+  margin-top: -7px;
+}
+
+.flex-container>a {
+  font-size: 1.6em;
+  text-decoration: none;
+  color: white;
+  margin-left: 2em;
+  margin-right: 0.4em;
+}
+
+#urp {
+  margin-left: 7px;
+  position: absolute;
+  color: white;
+  z-index: +1;
+  font-size: 3em;
+}
+/* footer */
+#socialcontainer {
+  display: flex;
+  justify-content: center;
+  background-color: ;
+  background-size: contain;
+}
+
+.socialbutton {
+  height: 75px;
+  width: 65px;
+  border-style: none;
+}
+
+#facebook {
+  background: url("images/facebook-2429746_640.png") no-repeat;
+  background-size: contain;
+}
+
+#twitter {
+  background: url("images/twitter-2430933_640 (1).png")no-repeat;
+  background-size: contain;
+}
+
+#instagram {
+  background: url("images/instagram-2433265_640.png")no-repeat;
+  background-size: contain;
+}
+
+#linkedin {
+  background: url("images/linked-in-2668700_640.png")no-repeat;
+  background-size: contain;
+}
+
+#youtube {
+  background: url("images/youtube-1837872_640.png")no-repeat;
+  background-size: contain;
+  margin-top: 15px;
+}
+/*Blueprints Site*/
+#blueprintcontainer{
+  display:flex;
+  flex-direction: column;
+  background-color:red;
+  width: 100%;
+  height: auto;
+}
+.project{
+  height:auto;
+  margin-left:16px;
+}
