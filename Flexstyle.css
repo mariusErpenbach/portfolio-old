@@ -7,7 +7,7 @@ body {
   height:100%;
 
   background-color: #2B3A67;
-
+  padding:1%;
 }
 #TopPic {
   z-index: +2;
@@ -35,23 +35,12 @@ li:not(:last-child) {
   margin-top: 6px;
   margin-bottom: 16px;
 }
-
-.NaviLink:hover{
-  padding:0.4em;
-  animation-name: Navihover;
-  animation-duration: 2s;
-  animation-iteration-count: 1;
+.NaviLink{
+  margin-top:6px;
+  transition: background-color 0.5s ease;
 }
-@keyframes Navihover {
-  0% {
-    padding:inherit;
-  }
-
-
-  100%{
-    padding:0.4em;
-  }
-}
+.NaviLink:hover {
+  background-color: lightgreen;}
 
 /* page main container */
 .flex-container {
@@ -122,13 +111,101 @@ li:not(:last-child) {
 }
 /*Blueprints Site*/
 #blueprintcontainer{
+  text-align: center;
   display:flex;
-  flex-direction: column;
-  background-color:red;
+  flex-direction:column;
+  background-color:#2B3A67;
+  border-style:;
   width: 100%;
   height: auto;
+  color:white;
 }
 .project{
   height:auto;
-  margin-left:16px;
+  width:40%;
+  margin-right:auto;
+  margin-left:auto;
+  margin-top:16px;
+  margin-bottom:16px;
+  padding:16px;
+  border-style:dotted;
+
+}
+#SkillsContainer{
+  justify-content: center;
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color:#2B3A67;
+  border-style:;
+  width: 100%;
+  height: auto;
+
+}
+
+.Skills{
+  width:26%;
+  height:20em;
+  background-color:#2B3A67;
+  border-style:solid;
+  border-color:grey;
+  padding:1%;
+  margin:1%;
+  color:white;
+}
+
+.Skills > img {
+height:25%;
+width:20%;
+padding:1%;
+}
+.Skilldescription{
+margin-top:-7em;
+font-size:75%;
+}
+.Skilldescription > h1{
+text-align: right;
+font-size:180%;
+}
+.Skilldescription > p {
+  margin-top:4em;
+}
+.skillbar{
+  padding:1%;
+  height:20px;
+  width:90%;
+  background-color:grey;
+  border-radius:10px;
+  margin-top:16px;
+  transition: background-color 0.5s ease;
+
+}
+.skillbar:hover {
+  background-color: lightgreen;
+}
+.Skillmeter{
+  margin-top:3px;
+  height:60%;
+  width:;
+  border-style:solid;
+  border-color:lightblue;
+  background-color:yellow;
+  border-radius:inherit;
+  text-align:right;
+}
+.Skillmeter > p {
+  margin-top:-1px;
+  color:black;
+}
+#HTMLSKILL {
+  width:50%;
+}
+#CSSSKILL{
+  width:35%
+}
+#JSSKILL{
+  width:55%;
+}
+#PHPSKILL{
+  width:35%;
 }
